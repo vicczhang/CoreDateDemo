@@ -1,0 +1,23 @@
+//
+//  demo-Prefix.pch
+//  DataBaseDemo
+//
+//  Created by zhang on 16/3/31.
+//  Copyright © 2016年 Messcat. All rights reserved.
+//
+
+#ifndef demo_Prefix_pch
+#define demo_Prefix_pch
+
+#define appDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+#endif /* demo_Prefix_pch */
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import "AppDelegate.h"
+#import "Student.h"
+#import "Person.h"
+
+#endif

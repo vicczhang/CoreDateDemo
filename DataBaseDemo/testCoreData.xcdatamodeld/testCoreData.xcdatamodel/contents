@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1713" minimumToolsVersion="Xcode 7.0">
+    <entity name="Person" representedClassName="Person" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="stu" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="person" inverseEntity="Student" syncable="YES"/>
+    </entity>
+    <entity name="Ps" representedClassName="Ps" syncable="YES">
+        <attribute name="as" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="no" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pw" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pw" inverseName="ps" inverseEntity="Pw" syncable="YES"/>
+    </entity>
+    <entity name="Pw" representedClassName="Pw" syncable="YES">
+        <attribute name="as" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="asd" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="ps" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ps" inverseName="pw" inverseEntity="Ps" syncable="YES"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" syncable="YES">
+        <attribute name="school" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stuGrade" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stuNo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="stu" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Ps" positionX="-63" positionY="36" width="128" height="90"/>
+        <element name="Pw" positionX="-54" positionY="45" width="128" height="90"/>
+        <element name="Student" positionX="-54" positionY="18" width="128" height="105"/>
+    </elements>
+</model>
